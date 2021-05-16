@@ -30,11 +30,65 @@ Barber App development in React Native.
     >_ npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
 
 # ADD to:
-    `index.js`
+
+`index.js`
     
-    Then add the next command:
-    `import "react-native-gesture-handler";`
+  Then add the next command:
+
+`import "react-native-gesture-handler";`
 
 # Stack
 
     >_ npm install @react-navigation/stack
+
+# Bottom Tabs
+
+    >_ npm install @react-navigation/bottom-tabs
+
+# Async Storage
+
+    >_ npm install @react-native-community/async-storage
+
+# Geolocation
+
+    >_ npm install @react-native-community/geolocation
+
+`ADD TO AndroidManifest.xml`
+
+    <uses-permission android:name="android.permision.ACCESS_FINE_LOCATION" />
+
+# Permissions
+
+    >_ npm install react-native-permissions
+
+# Swiper
+
+    >_ npm install react-native-swiper
+
+# SVG
+
+    >_ npm install react-native-svg
+    >_ npm install react-native-svg-transformer
+
+`ADD TO metro.config.js`
+
+    const { getDefaultConfig } = require('metro-config');
+
+    module.exports = (async () => {
+    const {
+        resolver: { sourceExts, assetExts },
+    } = await getDefaultConfig();
+    return {
+        transformer: {
+        babelTransformerPath: require.resolve('react-native-svg-transformer'),
+        },
+        resolver: {
+        assetExts: assetExts.filter(ext => ext !== 'svg'),
+        sourceExts: [...sourceExts, 'svg'],
+        },
+    };
+    })();
+
+## Finally  Just run the AVD
+
+    >_ npx react-native run-*device*
