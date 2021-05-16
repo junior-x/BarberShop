@@ -18,7 +18,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import { NavigationContainer } from "@react-navigation/native";
+import {NavigationContainer} from '@react-navigation/native';
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -54,9 +54,9 @@ const App: () => Node = () => {
   };
 
   return (
-    <>
-      
-    </>
+    <SafeAreaView style={styles.area}>
+      <Text style={styles.text}>:)</Text>
+    </SafeAreaView>
   );
 };
 
@@ -77,6 +77,15 @@ const styles = StyleSheet.create({
   highlight: {
     fontWeight: '700',
   },
+  area: {
+    backgroundColor: "#d8ff57",
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  text: {
+    fontSize: 90,
+  }
 });
 
 export default App;
