@@ -1,22 +1,13 @@
 import React from 'react';
 import type {Node} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+
+import MainStack from "./src/stacks/MainStack";
 
 import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+  SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, useColorScheme, View, } from 'react-native';
+
+import {
+  Colors, DebugInstructions, Header, LearnMoreLinks, ReloadInstructions, } from 'react-native/Libraries/NewAppScreen';
 
 import {NavigationContainer} from '@react-navigation/native';
 
@@ -36,10 +27,9 @@ const Section = ({children, title}): Node => {
       <Text
         style={[
           styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
+          {color: isDarkMode ? Colors.light : Colors.dark},
         ]}>
+        {' '}
         {children}
       </Text>
     </View>
@@ -52,11 +42,13 @@ const App: () => Node = () => {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
-
   return (
-    <SafeAreaView style={styles.area}>
-      <Text style={styles.text}>:)</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={styles.area}>
+        <Text style={styles.text}>:)</Text>
+        <MainStack/>
+      </SafeAreaView>
+    </NavigationContainer>
   );
 };
 
@@ -78,14 +70,14 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   area: {
-    backgroundColor: "#d8ff57",
+    backgroundColor: '#d8ff57',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
   text: {
     fontSize: 90,
-  }
+  },
 });
 
 export default App;
