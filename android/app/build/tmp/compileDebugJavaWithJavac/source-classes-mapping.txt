@@ -1,0 +1,14 @@
+com/barbershop/MainApplication.java
+ com.barbershop.MainApplication
+ com.barbershop.MainApplication$1
+com/barbershop/BuildConfig.java
+ com.barbershop.BuildConfig
+com/barbershop/MainActivity.java
+ com.barbershop.MainActivity
+com/barbershop/ReactNativeFlipper.java
+ com.barbershop.ReactNativeFlipper
+ com.barbershop.ReactNativeFlipper$1
+ com.barbershop.ReactNativeFlipper$2
+ com.barbershop.ReactNativeFlipper$2$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
