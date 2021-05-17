@@ -4,7 +4,9 @@ Barber App development in React Native.
 
 `Prototype`
 
-![Video of App](/assets/vid/Barberapp-Prototype.mp4)
+![3d model](/src/assets/img/3dmodel.png)
+
+![Video of App](/src/assets/vid/Barberapp-Prototype.mp4)
 
 ![Image of App](/src/assets/img/screen-mkb.png)
 
