@@ -2,7 +2,7 @@
 
 Barber App development in React Native.
 
-![Image of App](/src/assets/img/show.PNG)
+![Image of App](/src/assets/img/screen-mk.png)
 
 *...*
 
