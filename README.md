@@ -2,6 +2,8 @@
 
 Barber App development in React Native.
 
+`Project Preview`
+
 ![Image of App](/src/assets/img/screen-mk.png)
 
 *...*
